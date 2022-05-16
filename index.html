@@ -15,7 +15,6 @@
       body {
         margin: 0;
         font-family: "Roboto", sans-serif;
-        font-size: 14px;
       }
 
       .navbar {
@@ -24,8 +23,10 @@
       }
 
       .home {
-        background-color: black;
-        height: 100vh;
+        background-image: url("./assets/main-bg.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 120vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -34,38 +35,82 @@
 
       .home-title {
         color: white;
-        font-size: 25px;
-        padding: 10px;
+        padding: 5px;
       }
 
       .home-subtitle {
         color: white;
         font-size: 14px;
-        padding: 10px;
+        padding: 5px;
       }
 
       .home-button {
-          padding: 10px;
+        padding: 5px;
       }
 
-      .page2 {
-        background-color: burlywood;
+      .feature_1 {
+        height: 120vh;
+        background-image: url("./assets/the-games-bg.jpg");
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
       }
 
-      .h1 {
-        margin: 0px;
-        font-size: 20px;
-        font-weight: 600px;
+      .feature_2 {
+        height: 120vh;
+        background-image: url("./assets/features.jpg");
+        background-size: 100% 100%;
+        color: white;
+        display: flex;
+        justify-content: end;
+        padding: 20px;
+      }
+
+
+      h1 {
+        font-size: 80px;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 36px;
+        font-weight: bold;
+      }
+
+      button {
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: #f0ad4e;
+        padding: 10px 50px;
+        border-radius: 2px;
+        border: none;
       }
     </style>
   </head>
   <body>
-    <nav class="navbar">Navbar</nav>
+    <!-- <nav class="navbar">Navbar</nav> -->
     <div class="home">
-      <div class="home-title">PLAY TRADITIONAL GAME</div>
-      <div class="home-subtitle">Experience new traditional game play</div>
+      <div class="home-title"><h1>PLAY TRADITIONAL GAME</h1></div>
+      <div class="home-subtitle">
+        <h2>Experience new traditional game play</h2>
+      </div>
       <div class="home-button"><button>play now</button></div>
     </div>
-    <div class="home page2">Page 2</div>
+    <div class="feature_1">
+      <div>What's so special?</div>
+      <div style="display: flex">
+        <div style="width: 40%; background-color: red">the games</div>
+        <div style="width: 60%; background-color: yellow">galery</div>
+      </div>
+    </div>
+    <div class="feature_2">
+      <div style="background-color: red; width: 50%;">
+        <div>What's so special?</div>
+        <div>Features</div>
+        <div>poin - poinnya</div>
+      </div>
+    </div>
   </body>
 </html>
